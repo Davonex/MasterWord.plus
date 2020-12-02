@@ -4,10 +4,66 @@
 
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Changa:300" rel="stylesheet">  -->
-</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
 
-<body>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Changa:300" rel="stylesheet">  -->
+</head>  
+  
+  <body class="w3-2021-buttercream">
+  
+  <!-- Creez une salle ou se joindre à la salle -->
+  <div >
+    <!-- <h1>Dixit</h1> -->
+	<!-- <h1><img src="/images/logo.png" alt="Dixit" height="124" width="350" ></h1> -->
+	<div class="w3-container w3-center" style="width:50%">
+		<h1 class="w3-center">Master Word</h1>
+		<!-- <form> -->
+		<div >
+			<input class="w3-input w3-border" type="text" placeholder="Pseudo" required="" name="NickName">
+		</div>
+		<div >
+			<input class="w3-input w3-border" type="text" placeholder="Salle" required="" name="Room">
+		</div>
+		<!-- </form> -->
+		<p id='error-message'> </p>
+		<div class="w3-section">
+			<button class="w3-button w3-Green " type="ENTER">
+				<i class="fa fa-paper-plane"></i> ENTRER DANS LA SALLE
+			</button>
+			<button class="w3-button w3-red" type="CREATE">
+				<i class="fa fa-paper-plane"></i> CREER UNE SALLE
+			</button>
+		</div>
+	</div>
+  </div>
+
+
+  <div id="id01" class="w3-modal">
+	<div class="w3-modal-content  w3-animate-top">
+  
+	  <header class="w3-container w3-teal">
+		<span onclick="document.getElementById('id01').style.display='none'"
+		class="w3-button w3-display-topright">&times;</span>
+		<h2>Modal Header</h2>
+	  </header>
+  
+	  <div class="w3-container">
+		<p>Some text..</p>
+		<p>Some text..</p>
+	  </div>
+  
+	  <footer class="w3-container w3-teal">
+		<p>Modal Footer</p>
+	  </footer>
+  
+	</div>
+  </div> 
+
+
+</body>
 
 
 	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
